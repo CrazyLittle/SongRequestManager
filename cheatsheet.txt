@@ -1,0 +1,71 @@
+Beat saber SRM useful mod commands:
+
+<bsr#> = BSR code number from bsaber.com and beatsaver.com
+
+Open queue for requests:
+!open
+
+Close queue for requests:
+!close
+
+Turn !bomb on and off:
+!sabotage on
+!sabotage off
+
+Show queue:
+!queue
+
+Show how many songs and total time length of current queue:
+!queuestatus
+
+See the link and code for the current requested song being played (only applies to last SRM requested song):
+!link
+
+Add a note to the streamer for a particular song, "So-in-so requested XXX difficulty" etc
+!songmsg <bsr#> <whatever note you want to say>
+
+See who requested a song:
+!who <bsr#>
+
+See what song a code represents:
+!lookup <bsr#>
+
+To force add a song to the queue bottom:
+!modadd <bsr#> 
+
+To force add a song to the TOP of queue:
+!att <bsr#>
+
+To delete a song from queue:
+!remove <bsr#>
+
+To move a song from anywhere currently in queue to the top:
+!mtt <bsr#>
+
+To permanently block a song from being requested:
+!block <bsr#>
+
+To remove a song from the blocklist:
+!unblock <bsr#>
+
+To permanently whitelist (OKAY) a song for requests, IE too low NJS on a valid map:
+!whitelist/add <bsr#>
+
+To remove a song from whitelist:
+!whitelist/remove <bsr#>
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+potentially dangerous commands
+use carefully
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Remove all songs from queue:
+!clearqueue
+
+Permanently substitute a request-able song code for another:
+(IE any time somebody requests shit song with code <bsr#> queue instead a different song <newbsr#> )
+!remap <bsr#> <newbsr#> 
+
+Undo a song remapping
+!unmap <bsr#>
+
